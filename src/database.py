@@ -1,3 +1,6 @@
+from sqlalchemy import create_engine, text
+import json
+
 # Connect to Neon
 db_url = "postgresql://neondb_owner:npg_ziW1uVZR4jhL@ep-dry-flower-a5cttzfr-pooler.us-east-2.aws.neon.tech/user_anime_stats?sslmode=require"
 engine = create_engine(db_url, connect_args={'connect_timeout':10})
